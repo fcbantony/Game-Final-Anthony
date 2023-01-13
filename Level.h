@@ -10,6 +10,7 @@ class Player;
 
 class Level {
 
+//declarations
 private:
 	Enemy* enemy;
 	Player* player;
@@ -39,6 +40,7 @@ public:
 	bool levelTwoComplete = false;
 	bool levelThreeComplete = false;
 	
+	//action methods
 	void buildLevelOnePlatforms();
 	void buildLevelTwoPlatforms();
 	void buildLevelThreePlatforms(Enemy &enemy);

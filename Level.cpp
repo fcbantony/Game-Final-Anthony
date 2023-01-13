@@ -3,6 +3,8 @@
 #include "Enemy.h"
 #include "Player.h"
 
+
+//methods to create the levels with associated assets in them including vectors for platforms, grapplepoints and deathzones.
 void Level::buildLevelOnePlatforms() {
     
     setLever(1644.f, 336.f);
@@ -127,6 +129,7 @@ void Level::buildLevelThreePlatforms(Enemy &enemy) {
     }
 }
 
+//method to clear the previous level as to not obstruct with current one.
 void Level::destroyLevel() {
     platforms.clear();
     grapplePoints.clear();
@@ -139,6 +142,7 @@ void Level::destroyLevel() {
     }
 }
 
+// Level draw, for loops to draw the platforms and grapple points associated with the specific level.
 void Level::draw(sf::RenderWindow& window, Player &player) {
     setGrapplePoints();
     checkLever();
@@ -152,6 +156,7 @@ void Level::draw(sf::RenderWindow& window, Player &player) {
         window.draw(grapplePoints[i]);
     }
 
+    // Booleans to evaluate which level to draw based on the condistions in the if.
     if (!levelOneComplete && !levelTwoComplete && !levelThreeComplete) {
         for (int i = 0; i < enemies.size(); i++) {
             enemies[i].moveEnemyX(1000.f, 1550.f);
@@ -183,6 +188,7 @@ void Level::setFileName(std::string fileName) {
     leverFileName = fileName;
 }
 
+//method to define lever
 void Level::setLever(float posx, float posy) {
     checkLever();
     lever.setScale(0.35, 0.35);
@@ -191,6 +197,7 @@ void Level::setLever(float posx, float posy) {
     lever.setTexture(leverTexture);
 }
 
+//method to check whether the lever has been pulled or not and to load the correct texture based on the if statement.
 void Level::checkLever() {
     if (leverPulled) {
         leverFileName = "assets/leverLeft.png";
@@ -201,6 +208,7 @@ void Level::checkLever() {
     }
 }
 
+//method to define door
 void Level::setDoor(float posx, float posy) {
     door.setScale(0.80, 0.80);
     door.setPosition(posx, posy);
@@ -208,6 +216,7 @@ void Level::setDoor(float posx, float posy) {
     door.setTexture(doorTexture);
 }
 
+//method to define grapple points
 void Level::setGrapplePoints() {
     grappleFileName = "assets/grappleStone.png";
     grappleStone.loadFromFile(grappleFileName);
@@ -219,12 +228,14 @@ void Level::setGrapplePoints() {
     }
 }
 
+//method to define background textures
 void Level::setBackground(std::string fileName) {
     backgroundTexture.loadFromFile(fileName);
     background.setTexture(backgroundTexture);
     background.setPosition(0.f, 0.f);
 }
 
+//method to define music
 void Level::setMusic(std::string musicFileName) {
     music.openFromFile(musicFileName);
     music.setLoop(true);

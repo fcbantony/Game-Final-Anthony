@@ -579,7 +579,7 @@ void Player::dwarfMustDieMode() {
 	immuneTime = 0;
 }
 
-//Anthony SFX
+//method for defining sound effects.
 void Player::setSFX(std::string sfxFileName) {
 	sfxBuffer.loadFromFile(sfxFileName);
 	sound.setBuffer(sfxBuffer);
