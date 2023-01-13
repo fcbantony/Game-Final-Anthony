@@ -280,4 +280,3 @@ void MainMenu::triggerGameFinished(Level &level) {
 
 }
 
-

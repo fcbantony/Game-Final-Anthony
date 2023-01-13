@@ -165,3 +165,83 @@ int main() {
     }
     ImGui::SFML::Shutdown();
 }
+
+//References - Anthony
+
+/*controls background screen :
+https://www.freepik.com/free-vector/entrance-cave-mountain-with-empty-space_21427495.htm#page=5&query=game%20background%20cave&position=29&from_view=search&track=ais
+Artist: upklyak
+
+font:
+https://www.fontspace.com/black-north-font-f87052
+Creator: Letterhend Studio
+
+zipline texture :
+https://www.gamedeveloperstudio.com/graphics/viewgraphic.php?page-name=Zip-line&item=1r6c678v716c991o77
+Artist: Robert Brooks
+
+arrow:
+https://www.gamedeveloperstudio.com/graphics/viewgraphic.php?page-name=Prehistoric-weapon-icon-collection&item=165b2x9r1l43351678
+Artist: Robert Brooks
+
+music:
+https://pixabay.com/music/search/medieval/
+
+    assets/assets_intro.ogg
+    Song Title: The Sorrow II - Dark Theme 02
+    Artist: Zen Man
+
+    assets/assets_level1.ogg
+    Song Title: langhús burning - Viking Background Music
+    Artist: OB-LIX
+
+    assets/assets_level2.ogg
+    Song Title: Heilir æsir | Norse - Viking Background Music
+    Artist: OB-LIX
+
+    assets/assets_level3.ogg
+    Song Title: Warriors Across the Unknown - Epic Viking and Medieval Music
+    Artist: GioeleFazzeri
+
+    assets/assets_victory.ogg
+    Song Title: Almost There
+    Artist: GavinNellist
+
+    assets/assets_death.ogg
+    Song Title: ancient rhythm
+    Artist: SamuelFrancisJohnson
+*/
+
+//References - Jamie
+
+/*
+assets/sfx_inventory.wav
+Inventory: https://opengameart.org/content/inventory-sound-effects
+Artist: opengameart
+
+assets/sfx_pageTurn.wav
+Page flip sounds: https://www.youtube.com/watch?v=ugKjl3vk7TA&ab_channel=SoundEffectsFactory
+Artist: Sound Effect Factory
+
+assets/sfx_bowAttack.wav
+bow: https://www.youtube.com/watch?v=kiKOo6HQFRw&ab_channel=GFXSounds
+Artist: GFXSounds
+
+assets/sfx_axeAttack
+Axe: https://www.youtube.com/watch?v=o7nAIbtMoxQ&ab_channel=2MirrorsDialogue
+Artist: audiojungle, 2MD
+
+assets/sfx_pickaxeAttack
+Pick: https://www.youtube.com/watch?v=vHbNnHPQnII&t=8s&ab_channel=TheRustAdmin
+Artist: The Rust Admin
+Game: Rust
+
+assets/bow
+https://minecraft.fandom.com/wiki
+
+assets/axe
+https://minecraft.fandom.com/wiki
+
+assets/pickaxe
+https://minecraft.fandom.com/wiki
+*/
